@@ -55,7 +55,7 @@
     "@storybook/addon-mdx-gfm": "^8.5.3",
     "@storybook/blocks": "^8.5.3",
     "@storybook/nextjs": "^8.5.3",
-    "@storybook/react": "^8.5.3",
+    "@storybook/react": "^10.5.10",
     "@storybook/test": "^8.5.3",
     "@testing-library/jest-dom": "^6.1.4",
     "@testing-library/react": "^16.3.0",
