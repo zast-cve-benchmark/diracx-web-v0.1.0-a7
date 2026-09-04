@@ -1,0 +1,91 @@
+title: "[<Community Name>] User Feedback Survey"
+body:
+  - type: markdown
+    attributes:
+      value: >
+        We value your feedback and would love to hear about your experience with our current web application.
+        Your insights will be instrumental in shaping the new diracx-web client we are building.
+        Please take a moment to answer the questions below.
+
+  - type: markdown
+    attributes:
+      value: "## General"
+
+  - type: textarea
+    id: overall-experience
+    attributes:
+      label: "Describe your overall experience with the current DIRAC web application."
+      description: >
+        Focus on aspects like ease of use, reliability, and speed.
+        - Briefly describe how you use the web application.
+          - Example: I am a DIRAC user and I use the web application to submit and monitor my jobs.
+        - Describe features you like/dislike.
+          - Example:
+            - I like the possibility of "filtering" as I type.
+            - I dislike the fact that I need to know the beginning of the values to filter jobs.
+        - Describe features you find useful/useless.
+          - Example:
+            - I find the possibility of monitoring my jobs in real-time very useful.
+            - I find the possibility of seeing all the existing applications useless as I cannot access most of them.
+    validations:
+      required: true
+
+  - type: textarea
+    id: santa-claus-might-be-on-his-way
+    attributes:
+      label: "Are there any features or functionalities you wish were included in the current web application?"
+      description: >
+        Example: Yes, I would love to have a dark mode!
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: "## Design and responsiveness"
+
+  - type: textarea
+    id: design-feeling
+    attributes:
+      label: "How do you feel about the current user interface and design? What changes, if any, would you suggest?"
+      description: >
+        Example: I would love if tabs could be actually located in a side bar.
+    validations:
+      required: false
+
+  - type: textarea
+    id: mobile-experience
+    attributes:
+      label: "Have you ever used the DIRAC web application on mobile devices? Would a mobile-friendly version be beneficial for you?"
+      description: "The adoption of OIDC tokens will open up such possibilities"
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: "## Extensions"
+
+  - type: textarea
+    id: extension
+    attributes:
+      label: "Are you using a DIRAC web application extension? What do you have in it?"
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: "## Any other suggestion"
+
+  - type: textarea
+    id: suggestions
+    attributes:
+      label: "Is there anything else you would like to share or suggest as we work on the diracx-web application?"
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: >
+        Thank you for taking the time to provide your feedback.
+        Your insights are valuable to us as we work on improving the application.
+        We will keep you updated on our progress and look forward to sharing the new version with you.
+

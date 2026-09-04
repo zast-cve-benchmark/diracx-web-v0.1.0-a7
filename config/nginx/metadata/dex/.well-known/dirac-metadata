@@ -1,0 +1,20 @@
+{
+  "virtual_organizations": {
+    "vo": {
+      "groups": {
+        "admin_group": {
+          "properties": ["Admin"]
+        },
+        "user_group": {
+          "properties": ["User"]
+        }
+      },
+      "support": {
+        "message": "Test instance",
+        "webpage": null,
+        "email": null
+      },
+      "default_group": "user_group"
+    }
+  }
+}

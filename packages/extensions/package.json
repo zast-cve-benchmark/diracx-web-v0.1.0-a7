@@ -1,0 +1,46 @@
+{
+  "name": "gubbins",
+  "version": "0.1.0-a7",
+  "private": true,
+  "type": "module",
+  "license": "GPL-3.0-only",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "test": "cypress open --config baseUrl=$DIRACX_URL",
+    "start": "next start",
+    "lint": "next lint",
+    "lint-staged": "lint-staged",
+    "ts-lint": "tsc -noEmit -incremental",
+    "postinstall": "node ../../node_modules/@axa-fr/react-oidc/bin/copy-service-worker-files.mjs public"
+  },
+  "dependencies": {
+    "@axa-fr/react-oidc": "^7.24.0",
+    "@dirac-grid/diracx-web-components": "0.1.0-a7",
+    "@mui/icons-material": "^6.4.2",
+    "@mui/material": "^6.1.6",
+    "@mui/utils": "^6.1.6",
+    "@mui/x-date-pickers": "^7.28.3",
+    "@tanstack/react-table": "^8.20.5",
+    "autoprefixer": "10.4.20",
+    "next": "15.3.1",
+    "postcss": "8.5.1",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^1.2.2",
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.14.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "cypress": "^14.2.1",
+    "eslint": "^9",
+    "eslint-config-next": "15.0.2",
+    "eslint-config-prettier": "^10.0.1",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "typescript": "^5"
+  }
+}

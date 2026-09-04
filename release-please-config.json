@@ -1,0 +1,38 @@
+{
+  "changelog-path": "CHANGELOG.md",
+  "release-type": "node",
+  "versioning": "prerelease",
+  "bump-minor-pre-major": true,
+  "bump-patch-for-minor-pre-major": true,
+  "draft": false,
+  "prerelease": true,
+  "include-v-in-tag": true,
+  "include-component-in-tag": false,
+  "prerelease-type": "a",
+  "packages": {
+    ".": {
+      "component": "root"
+    },
+    "packages/extensions": {
+      "component": "extensions"
+    },
+    "packages/diracx-web": {
+      "component": "diracx-web"
+    },
+    "packages/diracx-web-components": {
+      "component": "diracx-web-components"
+    }
+  },
+  "plugins": [
+    {
+      "type": "node-workspace",
+      "merge": false
+    },
+    {
+      "type": "linked-versions",
+      "groupName": "DiracX-Web",
+      "components": ["root", "diracx-web", "diracx-web-components", "extensions"]
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"
+}
