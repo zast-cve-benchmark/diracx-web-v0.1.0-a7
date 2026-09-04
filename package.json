@@ -8,7 +8,7 @@
     "packages/extensions"
   ],
   "devDependencies": {
-    "@commitlint/cli": "^19.7.1",
+    "@commitlint/cli": "^21.2.2",
     "@commitlint/config-conventional": "^19.7.1",
     "husky": "^9.0.11"
   },
