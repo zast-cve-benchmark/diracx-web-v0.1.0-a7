@@ -1,0 +1,25 @@
+{
+  "name": "diracx-web-root",
+  "version": "0.1.0-a7",
+  "private": true,
+  "workspaces": [
+    "packages/diracx-web-components",
+    "packages/diracx-web",
+    "packages/extensions"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
+    "husky": "^9.0.11"
+  },
+  "scripts": {
+    "dev": "npm --prefix packages/diracx-web run dev",
+    "build": "npm --prefix packages/diracx-web-components run build && npm --prefix packages/diracx-web run build && mv -f packages/diracx-web/out ./out",
+    "test:diracx-web-components": "npm --prefix packages/diracx-web-components run test",
+    "build:diracx-web-components": "npm --prefix packages/diracx-web-components run build",
+    "doc:diracx-web-components": "npm --prefix packages/diracx-web-components run doc",
+    "lint": "npm --prefix packages/diracx-web-components run lint && npm --prefix packages/diracx-web run lint",
+    "ts-lint": "npm --prefix packages/diracx-web-components run ts-lint && npm --prefix packages/diracx-web run ts-lint",
+    "prepare": "husky"
+  }
+}
